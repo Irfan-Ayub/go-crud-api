@@ -1,0 +1,23 @@
+1. GET /todos (Get all todos)
+
+curl -X GET http://localhost:8000/todos
+
+2. GET /todos/{id} (Get todo by ID)
+Replace {id} with the ID of the todo you want to retrieve.
+
+curl -X GET http://localhost:8000/todos/{id}
+
+3. POST /todos (Create new todo)
+
+curl -X POST http://localhost:8000/todos -H "Content-Type: application/json" -d '{"title": "New Task", "content": "Do something new"}'
+
+
+4. PUT /todos/{id} (Update todo by ID)
+Replace {id} with the ID of the todo you want to update.
+
+curl -X PUT http://localhost:8000/todos/{id} -H "Content-Type: application/json" -d '{"title": "Updated Task", "content": "Updated content"}'
+
+5. DELETE /todos/{id} (Delete todo by ID)
+Replace {id} with the ID of the todo you want to delete.
+
+curl -X DELETE http://localhost:8000/todos/{id}
